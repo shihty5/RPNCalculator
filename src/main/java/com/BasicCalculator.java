@@ -7,92 +7,81 @@ import java.util.Stack;
 
 public class BasicCalculator extends Calculator {
     private static final Map<String, Operator> operatorMap = new HashMap<>();
+    private static Stack<BigDecimal> workingStack = new Stack<>();
 
-    private static Stack<BigDecimal> stack = new Stack<>();
-    private static Stack<Stack> hisStack = new Stack<>();
+    //除法运算精度
+    private static final int DIV_SCALE = 10;
+
+    private static Memento memento = new Memento();
 
     static {
         operatorMap.put(OperatorEnum.ADD.getValue(), new Operator() {
             @Override
             public void compute() {
-                stack.push(stack.pop().add(stack.pop()));
-                hisStack.push(getSnapshot(stack));
+                workingStack.push(workingStack.pop().add(workingStack.pop()));
+                memento.save(workingStack);
             }
         });
 
         operatorMap.put(OperatorEnum.SUB.getValue(), new Operator() {
             @Override
             public void compute() {
-                BigDecimal operand1 = stack.pop();
-                BigDecimal operand2 = stack.pop();
-                stack.push(operand2.subtract(operand1));
-                hisStack.push(getSnapshot(stack));
+                BigDecimal operand1 = workingStack.pop();
+                BigDecimal operand2 = workingStack.pop();
+                workingStack.push(operand2.subtract(operand1));
+                memento.save(workingStack);
             }
         });
 
         operatorMap.put(OperatorEnum.MUL.getValue(), new Operator() {
             @Override
             public void compute() {
-                stack.push(stack.pop().multiply(stack.pop()));
-                hisStack.push(getSnapshot(stack));
+                workingStack.push(workingStack.pop().multiply(workingStack.pop()));
+                memento.save(workingStack);
             }
         });
 
         operatorMap.put(OperatorEnum.DIV.getValue(), new Operator() {
             @Override
             public void compute() {
-                BigDecimal operand1 = stack.pop();
-                BigDecimal operand2 = stack.pop();
-                stack.push(operand2.divide(operand1, 10, BigDecimal.ROUND_HALF_DOWN));
-                hisStack.push(getSnapshot(stack));
+                BigDecimal operand1 = workingStack.pop();
+                BigDecimal operand2 = workingStack.pop();
+                workingStack.push(operand2.divide(operand1, DIV_SCALE, BigDecimal.ROUND_HALF_DOWN));
+                memento.save(workingStack);
             }
         });
 
         operatorMap.put(OperatorEnum.SQRT.getValue(), new Operator() {
             @Override
             public void compute() {
-                stack.push(new BigDecimal(Math.sqrt(stack.pop().doubleValue())));
+                workingStack.push(new BigDecimal(Math.sqrt(workingStack.pop().doubleValue())));
+                memento.save(workingStack);
             }
         });
 
         operatorMap.put(OperatorEnum.UNDO.getValue(), new Operator() {
             @Override
             public void compute() {
-                //撤销上一次操作
-                hisStack.pop();
-                if (!hisStack.empty()) {
-                    stack = hisStack.peek();
-                }
+                //回滚到上一次操作
+                workingStack = memento.retrivePrevStatus();
             }
         });
 
         operatorMap.put(OperatorEnum.CLEAR.getValue(), new Operator() {
             @Override
             public void compute() {
-                stack.clear();
-                hisStack.push(getSnapshot(stack));
+                workingStack.clear();
+                memento.save(workingStack);
             }
         });
 
     }
 
-    public static Stack<BigDecimal> getSnapshot(Stack<BigDecimal> stack) {
-        Stack<BigDecimal> newStack = new Stack<>();
-        for (BigDecimal b : stack) {
-            newStack.push(b);
-        }
-        return newStack;
-    }
-
-    public void push(String input) {
-        stack.push(new BigDecimal(input));
-    }
-
     @Override
     public int action(String input) {
         if (isNumber(input)) {
-            stack.push(new BigDecimal(input));
-            hisStack.push(getSnapshot(stack));
+            workingStack.push(new BigDecimal(input));
+            memento.save(workingStack);
             return 0;
         }
 
@@ -100,7 +89,7 @@ public class BasicCalculator extends Calculator {
             return -1;
         }
 
-        if (!OperatorEnum.operable(input, stack.size(), hisStack.size())) {
+        if (!OperatorEnum.operable(input, workingStack.size())) {
             return -2;
         }
 
@@ -111,7 +100,7 @@ public class BasicCalculator extends Calculator {
 
     public void showStackInfo() {
         System.out.print("stack: ");
-        for (BigDecimal b : stack) {
+        for (BigDecimal b : workingStack) {
             System.out.print(b + " ");
         }
         System.out.println();

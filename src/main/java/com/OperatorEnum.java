@@ -17,13 +17,9 @@ public enum OperatorEnum {
         this.desc = desc;
     }
 
-    public static boolean operable(String input, int stackSize, int histStackSize) {
+    public static boolean operable(String input, int stackSize) {
         if (CLEAR.getValue().equals(input)) {
             return true;
-        }
-
-        if (UNDO.getValue().equals(input)) {
-            return histStackSize >= 1;
         }
 
         if (SQRT.getValue().equals(input)) {

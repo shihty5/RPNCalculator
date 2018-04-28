@@ -1,20 +1,15 @@
 package com;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test for simple RPNCalculator.
  */
-public class RPNCalculatorTest
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class RPNCalculatorTest {
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void shouldAnswerWithTrue() {
+        assertTrue(true);
     }
 }
