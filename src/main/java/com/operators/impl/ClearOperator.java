@@ -6,6 +6,9 @@ import com.operators.MementorOperator;
 import java.math.BigDecimal;
 import java.util.Stack;
 
+/**
+ * 清除运算器
+ */
 public class ClearOperator extends MementorOperator {
 
     @Override

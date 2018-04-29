@@ -16,7 +16,7 @@ public class RPNCalculator extends Calculator {
     private Stack<BigDecimal> workingStack;
     private StackMemento stackMemento;
     private OperatorFactory operatorFactory;
-    private int position = -1;
+    private int position;
     private DecimalFormat decimalFormat;
 
     private final String SUPPORTED_OPERATORS = "+, -, *, /, sqrt, clear, undo";
@@ -27,8 +27,8 @@ public class RPNCalculator extends Calculator {
         this.workingStack = workingStack;
         this.stackMemento = stackMemento;
         this.operatorFactory = operatorFactory;
-        decimalFormat = new DecimalFormat("0.##########");
-        decimalFormat.setRoundingMode(RoundingMode.DOWN);
+        this.decimalFormat = new DecimalFormat("0.##########");
+        this.decimalFormat.setRoundingMode(RoundingMode.DOWN);
 
         System.out.println("**************  欢迎使用RPN Calculator  **********");
         System.out.println(String.format("您可以输入任意数字和如下操作符进行运算:[%s]\n输入help 获取更多帮助, quit退出", SUPPORTED_OPERATORS));
@@ -38,10 +38,9 @@ public class RPNCalculator extends Calculator {
      * 处理每一个输入
      *
      * @param input 待处理的输入，接受数字和操作符
-     * @return >0 为正常
      */
     @Override
-    public int process(String input) {
+    public void process(String input) {
         if (QUIT.equals(input)) {
             System.out.println("感谢使用RPN Calculator, 再见！");
             System.exit(0);
@@ -49,13 +48,13 @@ public class RPNCalculator extends Calculator {
 
         if (HELP.equals(input)) {
             printHelpMessage();
-            return 1;
+            return;
         }
 
         if (isNumber(input)) {
             workingStack.push(new BigDecimal(input));
             stackMemento.save(workingStack);
-            return 0;
+            return;
         }
 
         if (!operatorFactory.isSupportedOperator(input)) {
@@ -68,7 +67,6 @@ public class RPNCalculator extends Calculator {
 
         workingStack = operatorFactory.getOperatorHandler(input).process(stackMemento, workingStack);
 
-        return 0;
     }
 
     /**
@@ -89,25 +87,31 @@ public class RPNCalculator extends Calculator {
         while (true) {
             String nextLine = scanner.nextLine();
 
-            if ("".equals(nextLine)) {
-                scanner.nextLine();
+            //过滤多余的回车空格
+            while ("".equals(nextLine)) {
+                nextLine = scanner.nextLine();
             }
 
-            int result = 0;
+            position = -1;
+
             String[] elements = nextLine.split("\\s");
             for (String input : elements) {
                 position += 2;
+                //过滤输入行中的空格
+                if ("".equals(input)) {
+                    position--;
+                    continue;
+                }
+
                 try {
-                    result = process(input);
+                    process(input);
                 } catch (CalcException e) {
                     System.out.println(e.getMessage());
                     break;
                 }
             }
 
-            if (result == 0) {
-                print();
-            }
+            print();
 
         }
     }
@@ -124,8 +128,8 @@ public class RPNCalculator extends Calculator {
     private void printHelpMessage() {
         System.out.println(String.format("[1]目前支持如下操作符:[%s]", SUPPORTED_OPERATORS));
         System.out.println("[2]+ - * / 对应加减乘除运算，注意进行除法运算时，除数不能为0");
-        System.out.println("[3]sqrt 返回正的平方根, 被计算数字必须大于0");
-        System.out.println("[4]clear 清除栈中所有数据");
-        System.out.println("[5]undo 撤销上次运算结果");
+        System.out.println("[3]sqrt 返回正的平方根, 被计算数字必须大于等于0");
+        System.out.println("[4]clear 清除所有数据，可以通过undo撤销");
+        System.out.println("[5]undo 撤销上次成功的操作");
     }
 }

@@ -3,7 +3,9 @@ package com.memento;
 import java.math.BigDecimal;
 import java.util.Stack;
 
-//备忘录，用来记录每次操作，支持撤销操作
+/**
+ * 备忘录，用来记录每次操作，用以支持撤销操作
+ */
 public class StackMemento implements Memento {
     private static Stack<Stack> hisStack = new Stack<>();
 
@@ -29,7 +31,7 @@ public class StackMemento implements Memento {
         return snapshot;
     }
 
-    public int size(){
+    public int size() {
         return hisStack.size();
     }
 }

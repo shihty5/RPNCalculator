@@ -6,6 +6,9 @@ import com.operators.MementorOperator;
 import java.math.BigDecimal;
 import java.util.Stack;
 
+/**
+ * 加法运算器
+ */
 public class AddOperator extends MementorOperator {
 
     @Override

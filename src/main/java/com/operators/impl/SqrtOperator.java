@@ -6,6 +6,9 @@ import com.operators.MementorOperator;
 import java.math.BigDecimal;
 import java.util.Stack;
 
+/**
+ * 开平方根运算器
+ */
 public class SqrtOperator extends MementorOperator {
 
     @Override
@@ -13,8 +16,12 @@ public class SqrtOperator extends MementorOperator {
         BigDecimal operand = workingStack.pop();
 
         if (operand.compareTo(BigDecimal.ZERO) < 0) {
-            System.out.println("进行平方根运算时，数必须大于等于0！");
+            System.out.println("Warning: 进行开平方根运算时，被操作数必须大于等于0！");
+
+            //异常不需要保存现场，恢复到之前状态
             workingStack.push(operand);
+            needSave = false;
+
             return workingStack;
         }
 

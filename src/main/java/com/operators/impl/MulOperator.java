@@ -6,6 +6,9 @@ import com.operators.MementorOperator;
 import java.math.BigDecimal;
 import java.util.Stack;
 
+/**
+ * 乘法运算器
+ */
 public class MulOperator extends MementorOperator {
 
 

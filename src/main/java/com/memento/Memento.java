@@ -8,6 +8,6 @@ public interface Memento {
     //保存现场
     void save(Stack<BigDecimal> stack);
 
-    //退回到上次现场
+    //获得最近一次现场
     Stack<BigDecimal> getPrevStatus();
 }

@@ -6,6 +6,9 @@ import com.operators.MementorOperator;
 import java.math.BigDecimal;
 import java.util.Stack;
 
+/**
+ * 撤销运算器
+ */
 public class UndoOperator extends MementorOperator {
 
     @Override

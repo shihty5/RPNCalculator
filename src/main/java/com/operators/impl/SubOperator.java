@@ -6,6 +6,9 @@ import com.operators.MementorOperator;
 import java.math.BigDecimal;
 import java.util.Stack;
 
+/**
+ * 减法运算器
+ */
 public class SubOperator extends MementorOperator {
 
     @Override

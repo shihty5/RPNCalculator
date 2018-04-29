@@ -6,11 +6,12 @@ import java.math.BigDecimal;
 import java.util.Stack;
 
 public abstract class MementorOperator {
-    //该操作符是否需要保存现场，默认为true, 只有undo操作时为false
+    //该操作是否需要保存现场，默认为true
     protected boolean needSave = true;
-    //默认运算精度
+
+    //默认运算精度和四舍五入模式
     protected final int DEFAULT_SCALE = 15;
-    protected final int DEFAULT_ROUNDING_MODE= BigDecimal.ROUND_HALF_EVEN;
+    protected final int DEFAULT_ROUNDING_MODE = BigDecimal.ROUND_HALF_EVEN;
 
     public Stack<BigDecimal> process(StackMemento stackMemento, Stack<BigDecimal> workingStack) {
         Stack<BigDecimal> curWokringStack = compute(stackMemento, workingStack);
