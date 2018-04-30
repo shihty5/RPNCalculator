@@ -5,11 +5,9 @@ import com.domain.OperatorEnum;
 import com.memento.StackMemento;
 import com.operators.OperatorFactory;
 
-import java.io.InputStream;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class RPNCalculator extends Calculator {
@@ -81,39 +79,28 @@ public class RPNCalculator extends Calculator {
     }
 
     @Override
-    public void handle(InputStream is) {
-        Scanner scanner = new Scanner(is);
+    public void handle(String nextLine) {
 
-        while (true) {
-            String nextLine = scanner.nextLine();
+        position = -1;
 
-            //过滤多余的回车空格
-            while ("".equals(nextLine)) {
-                nextLine = scanner.nextLine();
+        String[] elements = nextLine.split("\\s");
+        for (String input : elements) {
+            position += 2;
+            //过滤输入行中的空格
+            if ("".equals(input)) {
+                position--;
+                continue;
             }
 
-            position = -1;
-
-            String[] elements = nextLine.split("\\s");
-            for (String input : elements) {
-                position += 2;
-                //过滤输入行中的空格
-                if ("".equals(input)) {
-                    position--;
-                    continue;
-                }
-
-                try {
-                    process(input);
-                } catch (CalcException e) {
-                    System.out.println(e.getMessage());
-                    break;
-                }
+            try {
+                process(input);
+            } catch (CalcException e) {
+                System.out.println(e.getMessage());
+                break;
             }
-
-            print();
-
         }
+
+        print();
     }
 
     private boolean isNumber(String input) {
