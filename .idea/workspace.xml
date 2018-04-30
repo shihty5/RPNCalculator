@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list id="770f2741-acf4-468c-bb84-28360e6df0cf" name="non-commit" comment="" />
     <list default="true" id="d311c3ed-1740-4e3d-b3e3-4417950c8409" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +68,6 @@
     <SUITE FILE_PATH="coverage/RPNCalculator$RPNCalculatorTest_testAddWhenInsufficientParameters.coverage" NAME="RPNCalculatorTest.testAddWhenInsufficientParameters Coverage Results" MODIFIED="1525020502087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.*</FILTER>
     </SUITE>
-  </component>
-  <component name="CoverageOptionsProvider">
-    <option name="myAddOrReplace" value="1" />
-  </component>
-  <component name="ExportToHTMLSettings">
-    <option name="OPEN_IN_BROWSER" value="true" />
-    <option name="OUTPUT_DIRECTORY" value="jcc" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="RPNCalculator" />
@@ -190,114 +172,11 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Stack</find>
-      <find>public stack</find>
-      <find>BigDecimal</find>
-      <find>stackMemento, workingStack</find>
-      <find>mock</find>
-      <find>workingStack.peek()</find>
-      <find>quit</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>T</replace>
-      <replace />
-      <replace>getPeekValue()</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/IOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Receiver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ComputeReceiver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/OperatorEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Memento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/StackMemento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/MentoOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/AddOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/ClearOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/MulOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/NumberOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/UndoOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/DivOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/SubOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/SqrtOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/BasicCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/RPNCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/CalcException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/domain/OperatorEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/OperatorFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/BasicCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/RPNCaclculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/memento/Memento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/memento/StackMemento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/AddOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/ClearOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/MulOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/SubOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/UndoOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/DivOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/impl/SqrtOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/operators/MementorOperator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/DBTestUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test.dat" />
-        <option value="$PROJECT_DIR$/src/test/java/com/RPNCalculatorProcessTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/RPNCalculatorHandleTest.java" />
-        <option value="$PROJECT_DIR$/target/test-classes/test.dat" />
-        <option value="$PROJECT_DIR$/src/test/resources/test.dat" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$USER_HOME$/.m2/settings.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/calculator/RPNCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/RPNCalculatorTest.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -333,25 +212,6 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test" />
-      <recent name="$PROJECT_DIR$/src/test/java/resources" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -364,76 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RPNCalculator" />
-      <envs />
-    </configuration>
-    <configuration name="RPNCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.RPNCalculatorTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RPNCalculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.RPNCalculatorTest" />
-      <option name="METHOD_NAME" value="testClear" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="RPNCalculatorTest.testHandle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.RPNCalculatorTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RPNCalculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" value="com.RPNCalculatorTest" />
-      <option name="METHOD_NAME" value="testHandle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -515,152 +306,15 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="com in RPNCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RPNCalculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="com.calculator in RPNCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RPNCalculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.calculator" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.RPNCalculatorTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RPNCalculatorTest.testHandle" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.com.calculator in RPNCalculator" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.com in RPNCalculator" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RPNCalculatorTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RPNCalculatorTest.testHandle" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.com in RPNCalculator" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.com.calculator in RPNCalculator" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="d311c3ed-1740-4e3d-b3e3-4417950c8409" name="Default" comment="" />
-      <changelist id="770f2741-acf4-468c-bb84-28360e6df0cf" name="non-commit" comment="" />
-      <created>1524759870837</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1524759870837</updated>
-      <workItem from="1524759872197" duration="2655000" />
-      <workItem from="1524840060816" duration="7664000" />
-      <workItem from="1524897378237" duration="33424000" />
-      <workItem from="1525070268941" duration="3847000" />
-    </task>
-    <task id="LOCAL-00001" summary="完成RPN计算器主要功能">
-      <created>1524974707024</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1524974707024</updated>
-    </task>
-    <task id="LOCAL-00002" summary="完善异常处理情况，增加注解">
-      <created>1525018043691</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1525018043691</updated>
-    </task>
-    <task id="LOCAL-00003" summary="补充UT">
-      <created>1525072985407</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1525072985407</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="RPNCalculatorTest - 2018.04.30 at 15h 18m 38s.xml">
-      <configuration name="RPNCalculatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest - 2018.04.30 at 15h 18m 50s.xml">
-      <configuration name="RPNCalculatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest - 2018.04.30 at 21h 52m 31s.xml">
-      <configuration name="RPNCalculatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest_testHandle - 2018.04.30 at 15h 15m 59s.xml">
-      <configuration name="RPNCalculatorTest.testHandle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest_testHandle - 2018.04.30 at 15h 16m 38s.xml">
-      <configuration name="RPNCalculatorTest.testHandle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest_testHandle - 2018.04.30 at 15h 17m 56s.xml">
-      <configuration name="RPNCalculatorTest.testHandle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest_testHandle - 2018.04.30 at 15h 18m 14s.xml">
-      <configuration name="RPNCalculatorTest.testHandle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RPNCalculatorTest_testHandle - 2018.04.30 at 15h 18m 29s.xml">
-      <configuration name="RPNCalculatorTest.testHandle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_calculator_in_RPNCalculator - 2018.04.30 at 15h 15m 27s.xml">
-      <configuration name="com.calculator in RPNCalculator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_in_RPNCalculator - 2018.04.30 at 15h 15m 36s.xml">
-      <configuration name="com in RPNCalculator" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47590000" />
+    <option name="totallyTimeSpent" value="9000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="23" width="1440" height="797" extended-state="0" />
@@ -689,18 +343,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成RPN计算器主要功能" />
-    <MESSAGE value="完善异常处理情况，增加注解" />
-    <MESSAGE value="补充UT" />
-    <option name="LAST_COMMIT_MESSAGE" value="补充UT" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1089,93 +723,13 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Python 2.7.13 (/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7) interpreter library</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>RPNCalculator</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: junit:junit:4.11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
